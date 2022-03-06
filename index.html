@@ -1,0 +1,52 @@
+<!----------------------- Designed by: Onkar Sharma [VATSA]  --------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome to VATSA CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+	<script type="text/javascript" language="javascript" src="calc.js"></script>
+</head>
+<body>
+
+	<div class="container">
+ 		<h1 class="intro">Vatsa Calculator</h1>
+	  	<div>
+			<input class="view" type="text" id="txt">
+		</div>
+			<table>
+				<tr>
+					<TD><input class="button" type="button" value="C" onclick="clean()"></TD>
+					<TD><input class="button" type="button" value="<" onclick="back()"></TD>
+					<TD><input class="button" type="button" value="/" onclick="button('/')"></TD>
+					<TD><input class="button" type="button" value="*" onclick="button('*')"></TD>
+				</tr>
+				<tr>
+					<TD><input class="button" type="button" value="7" onclick="button(7)"></TD>
+					<TD><input class="button" type="button" value="8" onclick="button(8)"></TD>
+					<TD><input class="button" type="button" value="9" onclick="button(9)"></TD>
+					<TD><input class="button" type="button" value="-" onclick="button('-')"></TD>
+				</tr>
+				<tr>
+					<TD><input class="button" type="button" value="4" onclick="button(4)"></TD>
+					<TD><input class="button" type="button" value="5" onclick="button(5)"></TD>
+					<TD><input class="button" type="button" value="6" onclick="button(6)"></TD>
+					<TD><input class="button" type="button" value="+" onclick="button('+')"></TD>
+				</tr>
+				<tr>
+					<TD><input class="button" type="button" value="1" onclick="button(1)"></TD>
+					<TD><input class="button" type="button" value="2" onclick="button(2)"></TD>
+					<TD><input class="button" type="button" value="3" onclick="button(3)"></TD>
+					<TD rowspan="2"><input class="button" type="button" style="height: 110px"  value="=" onkeydown="equal()"></TD>
+				</tr>
+				<tr>
+					<TD colspan="2"><input class="button" type="button" style="width: 110px" value="0" onclick="button(0)"></TD>
+		 			<TD><input class="button" type="button" value="." onclick="button('.')"></TD>
+		 		</tr>
+			</table>
+		</div>
+ 
+	<footer>2019 &copy Vatsa Calculator | All right rseserved | Designed by Onkar Sharma [VATSA]</footer>
+
+</body>
+</html>
