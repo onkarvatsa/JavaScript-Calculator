@@ -5,6 +5,7 @@
 <head>
 	<title>welcome to VATSA CALCULATOR</title>
 	<link rel="stylesheet" type="text/css" href="calc.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script type="text/javascript" language="javascript" src="calc.js"></script>
 </head>
 <body>
@@ -16,8 +17,8 @@
 		</div>
 			<table>
 				<tr>
-					<TD><input class="button" type="button" value="C" onclick="clean()"></TD>
-					<TD><input class="button" type="button" value="<" onclick="back()"></TD>
+					<TD><input class="button" type="button" value="C" onclick="Clean()"></TD>
+					<TD><input class="button" type="button" value="<" onclick="Back()"></TD>
 					<TD><input class="button" type="button" value="/" onclick="button('/')"></TD>
 					<TD><input class="button" type="button" value="*" onclick="button('*')"></TD>
 				</tr>
@@ -37,7 +38,7 @@
 					<TD><input class="button" type="button" value="1" onclick="button(1)"></TD>
 					<TD><input class="button" type="button" value="2" onclick="button(2)"></TD>
 					<TD><input class="button" type="button" value="3" onclick="button(3)"></TD>
-					<TD rowspan="2"><input class="button" type="button" style="height: 110px"  value="=" onkeydown="equal()"></TD>
+					<TD rowspan="2"><input class="button" type="button" style="height: 110px"  value="=" onclick="Equal()"></TD>
 				</tr>
 				<tr>
 					<TD colspan="2"><input class="button" type="button" style="width: 110px" value="0" onclick="button(0)"></TD>
